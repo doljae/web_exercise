@@ -1,0 +1,77 @@
+<html>
+<head>
+<style type="text/css">
+	.ex-layout{height:310px}
+	.menu{width:300px; height:40px; border: 2px solid #09c; background-color: #d7f5ff;}
+	.main .left-menu{float:left;width:50px;height:254px;border:2px solid red;background-color:#ffe7d5;}
+	.main .content{float:left;width:250px;height:250px;}
+	.main .content .article{height:200px; border:2px solid blue; background-color:#e2e9ff;}
+	.main .content .comment{height:50px; border: 2px solid purple; background-color:#ffddff;}
+	
+	.box-container{width:350px;border:2px solid #09c; background-color:#d7f5ff;}
+	.box-container .box{width:80px;height:40px;border:2px solid red;background-color:#ffe7d5;}
+	.clearfix:after{content:"";display:block;clear:both}
+	
+	.box-container2{width:350px;border:2px solid #e91bf5;}
+	.box-container2 div{padding:10px; border: 1px solid green;background-color:#e3ffe0;}
+	
+	#box1{position: static; top:20px; left:30px;}
+	#box2{position: relative; top:20px; left:30px;}
+	#box3{position: absolute; top:300px; right:30px;}
+	#box4{position: fixed; top:20px; right:30px;}
+	
+	.cursors span{display: inline-block; margin:5px; padding:5px 10px; background-color:#d2f4ff;border:2px solid #09c;}
+	
+	
+</style>
+</head>
+<body>
+	<div class="ex-layout">
+		<div class="menu">global menu</div>
+		<div class="main">
+			<div class="left-menu">left menu</div>
+			<div class="content">
+				<div class="article">article</div>
+				<div class="comment">comment</div>
+			</div>
+		</div>		
+	</div>
+	<br>
+	<div class="box-container">
+		<div class="box" style="float:left">박스1</div>
+		<div class="box" style="float:right">박스2</div>
+		<div style="clear:both"></div>
+	</div>
+	
+	<div class="box-container clearfix">
+		<div class="box" style="float:left">박스1</div>
+		<div class="box" style="float:right">박스2</div>
+	</div>
+	
+	<div class="box-container2">
+		<div id="box1">static박스</div>
+		<div id="box2">relative박스</div>
+		<div id="box3">absolute박스</div>
+		<div id="box4">fixed박스</div>
+	</div>
+	<br><br>
+	<div class="cursors">
+		<span style="cursor:auto">Auto</span>
+		<span style="cursor: crosshair">Crosshair</span>
+		<span style="cursor: default">Default</span>
+		<span style="cursor: pointer">Pointer</span>
+		<span style="cursor: move">Move</span>
+		<span style="cursor: e-resize">e-resize</span>
+		<span style="cursor: ne-resize">ne-resize</span>
+		<span style="cursor: nw-resize">nw-resize</span>
+		<span style="cursor: n-resize">n-resize</span>
+		<span style="cursor: se-resize">se-resize</span>
+		<span style="cursor: sw-resize">sw-resize</span>
+		<span style="cursor: s-resize">s-resize</span>
+		<span style="cursor: w-resize">w-resize</span>
+		<span style="cursor: text">Text</span>
+		<span style="cursor: wait">Wait</span>
+		<span style="cursor: help">Help</span>
+	</div>
+</body>
+</html>

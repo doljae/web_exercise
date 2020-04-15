@@ -1,0 +1,67 @@
+<html>
+<head>
+	<style>
+		h5{color:#F00;}
+		h6{color:#0F0; font-size: 30px}
+		/*.box{width:100px; height:50px; border: 1px solid green}*/
+		#my_box{background-color:#90C; width:150px;height:40px}
+		
+		div span{text-align:center; padding:10px;}
+		div.yellow_box span{background-color:yellow;}
+		div#c_box span{text-align:center; padding:10px}
+		div span .blue_span{background-color:blue;}
+		div span #c_span{text-align:center;padding:10px;}
+		
+		.aa > .cc{background-color:red}
+		
+		.box{background-color: #09c;padding:10px;margin-bottom:20px;}
+		.hover-box:hover{background-color:orange;}
+		.focus-input:focus{background:red;}
+		
+		.container > div{margin-top:20px;width:100px;height:100px;float:left;background-color:orange;}
+		.container > div:nth-child(2n+1){background-color:red}
+	</style>
+</head>
+<body>
+	<h5>h5태그</h5>
+	<h6>h6태그</h6>
+	<div class="box">box클래스</div>
+	<div id="my_box">id=my_box</div>
+	<div class="yellow_box">
+		<span>
+			yellow_box div 클래스 내의 span 입니다.
+		</span>
+	</div>
+	<div id="c_box">
+		<span>
+			c_box div 아이디 내의 span 입니다.
+		</span>
+	</div>
+	<div class="aa">
+		<div class="cc">
+			sec1
+		</div>
+	</div>
+	<div class="aa">
+		<div class="bb">
+			<div class="cc">
+				sec2
+			</div>
+		</div>
+	</div>
+	<div class="hover-box">
+		호버박스
+	</div>
+	<input class="focus-input" type="text" value="클릭해보세요">
+	<div class="container">
+		<div>
+		</div>
+		<div>
+		</div>
+		<div>
+		</div>
+		<div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<style>
+.h-container:after{clear:both;display:block;content:''}
+.h-container .item{float:left;width:100px;text-aligh:center;border-right:1px solid #ddd;}
+.h-container .item.last{float:right;border-right: none;}
+
+.ex-layout{width:500px;}
+.ex-layout .gnb{padding:15px;background-color:skyblue;}
+.ex-layout .main{background-color: white;}
+.ex-layout .main:after{clear:both;display:block;content:''}
+.ex-layout .main .lnb{float:left;width:100px;height:254px;background-color:orange;}
+.ex-layout .main .content{float:left;width:400px;}
+.ex-layout .footer{padding:15px;background-color:#ddd;}
+
+</style>
+
+
+<div class="h-container">
+	<div class="item">menu1</div>
+	<div class="item">menu2</div>
+	<div class="item">menu3</div>
+	<div class="item">menu4</div>
+	<div class="item">menu5</div>
+	<div class="item last">login</div>
+</div>
+<br><br>
+<div class="ex-layout">
+	<div class="gnb">global menu</div>
+	<div class="main">
+		<div class="lnb">Left menu</div>
+		<div class="content">
+			content areaa
+		</div>
+	</div>
+	<div class="footer">
+		footer area
+	</div>
+</div>
